@@ -1,0 +1,27 @@
+{
+  "jsc": {
+    "parser": {
+      "syntax": "typescript",
+      "dynamicImport":true,
+      "include":["**/*.ts"]
+
+      },
+      "baseUrl":"./",
+      "paths": {
+        "@/*": ["src/*"]
+    }
+
+  },
+  "env": {
+    "targets": {
+      "node": 16
+    }
+  },
+  "module": {
+    "type":"commonjs",
+    "strict": false,
+    "strictMode": true,
+    "lazy": false,
+    "noInterop": false
+  }
+}
